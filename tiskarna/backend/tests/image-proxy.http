@@ -1,0 +1,20 @@
+GET http://localhost:8080/proxy/get-id
+
+###
+
+POST http://localhost:8080/proxy/ 
+content-type: application/json
+
+{
+  "id": "bcb27b115a6705b140cf7f029d0b31b52724e74acbfa8dec",
+  "url": "https://source.unsplash.com/random/?city,night"
+}
+
+###
+
+GET http://localhost:8080/proxy/bcb27b115a6705b140cf7f029d0b31b52724e74acbfa8dec
+content-type: application/json
+
+{
+  "id": "bcb27b115a6705b140cf7f029d0b31b52724e74acbfa8dec"
+}
